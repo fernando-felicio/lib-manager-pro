@@ -1,21 +1,25 @@
 package entities;
 
+import entities.enums.BookStatus;
+
 public class Book {
 	
 	private String name;
 	private String author;
 	private int id;
 	private Category category; // Associating the Category class within the Book class
+	private BookStatus status;
 	
 	public Book() {
 		
 	}
 	
-	public Book (String name, String author, int id, Category category) {
+	public Book (String name, String author, int id, Category category, BookStatus status) {
 		this.name = name;
 		this.author = author;
 		this.id = id;
 		this.category = category;
+		this.status = status;
 	}
 
 	public String getName() {
@@ -50,9 +54,17 @@ public class Book {
 		this.category = category;
 	}
 
+	public BookStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(BookStatus status) {
+		this.status = status;
+	}
+
 	@Override
 	public String toString() {
-		return "Name : " + this.name + " | Author : " + this.author + " | ID : " + this.id + " | Category : " + this.category + " |";
+		return status + " | Name : " + this.name + " | Author : " + this.author + " | ID : " + this.id + " | Category : " + this.category + " |";
 	}
 
 	
