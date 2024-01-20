@@ -4,8 +4,9 @@ public class Category {
 	
 	private String bookCategory;
 	
-	public Category() {
-		
+	
+	public Category(String category) {
+		this.bookCategory = category;
 	}
 	
 	public String bookCategory() {
@@ -15,5 +16,12 @@ public class Category {
 	public void setCategory( String bookCategory ) {
 		this.bookCategory = bookCategory;
 	}
+
+	@Override
+	public String toString() {
+		return bookCategory;
+	}
+	
+	
 
 }

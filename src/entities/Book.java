@@ -12,7 +12,10 @@ public class Book {
 	}
 	
 	public Book (String name, String author, int id, Category category) {
-		
+		this.name = name;
+		this.author = author;
+		this.id = id;
+		this.category = category;
 	}
 
 	public String getName() {
@@ -46,6 +49,13 @@ public class Book {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
+
+	@Override
+	public String toString() {
+		return "Name : " + this.name + " | Author : " + this.author + " | ID : " + this.id + " | Category : " + this.category + " |";
+	}
+
+	
 	
 	
 	
