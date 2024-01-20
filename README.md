@@ -1,12 +1,10 @@
-<h1> Lib Manager PRO <h1>
-
 <h1>Documentação do Projeto - Sistema de Biblioteca em Java</h1>
 
 <h2>Introdução</h2>
-<p>Este projeto implementa um sistema simples de biblioteca em Java, onde os usuários podem adicionar livros, visualizar a lista de livros disponíveis, e realizar operações de aluguel. O sistema é executado no console e utiliza conceitos de orientação a objetos para representar livros, categorias e status de disponibilidade.</p>
+<p>Este projeto implementa um sistema de biblioteca em Java, onde os usuários podem adicionar livros, visualizar a lista de livros disponíveis, e realizar operações de aluguel. O sistema é executado no console e utiliza conceitos de orientação a objetos para representar livros, categorias e status de disponibilidade.</p>
 
 <h2>Arquitetura</h2>
-<p>O projeto é dividido e+-m três pacotes principais: <code>application</code>, <code>entities</code> e <code>entities.enums</code>.</p>
+<p>O projeto é dividido em três pacotes principais: <code>application</code>, <code>entities</code> e <code>entities.enums</code>.</p>
 <ol>
 <li><strong><code>application</code>:</strong> Contém a classe <code>Program</code>, que é a classe principal responsável pela interação com o usuário e pela execução do programa.</li>
        <li><strong><code>entities</code>:</strong> Contém as classes relacionadas à representação dos dados. A classe <code>Book</code> modela um livro, <code>Category</code> representa a categoria de um livro, e <code>BookStatus</code> é uma enumeração para o status de disponibilidade do livro.</li>
